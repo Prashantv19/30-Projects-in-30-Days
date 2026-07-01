@@ -32,11 +32,9 @@ function updateForm() {
 
   prevBtn.style.display = currentStep === 0 ? "none" : "inline-block";
 
-  nextBtn.innerText =
-    currentStep === steps.length - 1 ? "Submit" : "Next";
+  nextBtn.innerText = currentStep === steps.length - 1 ? "Submit" : "Next";
 
-  progress.style.width =
-    ((currentStep + 1) / steps.length) * 100 + "%";
+  progress.style.width = ((currentStep + 1) / steps.length) * 100 + "%";
 }
 
 function validateStep() {
